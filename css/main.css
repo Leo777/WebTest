@@ -1,0 +1,13 @@
+input{
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #888888;
+    align-items:baseline;
+}
+
+span{
+    color: dodgerblue;
+}
+div{
+    display:flex;
+    align-items:baseline;
+}

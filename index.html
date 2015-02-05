@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+    <head>
+        <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+       <script>
+           function checkForm() {
+               var name=$("#name").val();
+               if (name.length<2) {
+                   $("#nameError").html("please, provide your name");
+                   return false;
+               }
+               return true;
+           }
+       </script>
+    </head>
+    <body>
+    <form action="form" method="POST"><div id="nameError"></div><span>Please Enter client Name:</span>
+         <input type="text" name="clientName" id="name"/>
+        <input type="submit" onclick="return checkForm();" value="Submit">
+    </form>
+    </body>
+</html>
